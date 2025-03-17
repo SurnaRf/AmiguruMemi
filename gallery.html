@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <title>AmiguruMemi - Gallery</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <header class="header-container">
+            <h1>AmiguruMemi</h1>
+        </header>
+
+        <div class="nav-container">
+            <button class="hamburger-menu" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content-container">
+            <aside class="vertical-nav">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <div class="gallery-container">
+                <h2>Gallery</h2>
+                <div class="gallery">
+                    <div class="gallery-item" onclick="openModal();currentSlide(1)">
+                        <img src="images/solariss.crochet (1).png" alt="Photo 1">
+                    </div>
+                    <div class="gallery-item" onclick="openModal();currentSlide(2)">
+                        <img src="images/solariss.crochet (12).png" alt="Photo 2">
+                    </div>
+                    <div class="gallery-item" onclick="openModal();currentSlide(3)">
+                        <img src="images/solariss.crochet (4).png" alt="Photo 3">
+                    </div>
+                    <div class="gallery-item" onclick="openModal();currentSlide(4)">
+                        <img src="images/solariss.crochet.jpg" alt="Photo 4">
+                    </div>
+                    <div class="gallery-item" onclick="openModal();currentSlide(5)">
+                        <img src="images/solariss.crochet(16).jpg" alt="Photo 5">
+                    </div>
+                    <div class="gallery-item" onclick="openModal();currentSlide(6)">
+                        <img src="images/solariss.crochet(19).JPG" alt="Photo 6">
+                    </div>
+                    <div class="gallery-item">
+                        <video controls>
+                            <source src="images/how-to-crochet-a-cute-amigurumi-bunny-beginner-friendly-tutorial.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="gallery-item">
+                        <video controls>
+                            <source src="images/Untitled video - Made with Clipchamp.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="gallery-item">
+                        <video controls>
+                            <source src="images/tutorial.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>                
+            </div>
+        </div>
+
+        <button id="back-to-top">
+            ↑
+        </button>
+
+        <footer class="footer-container">
+            <p>&copy; 2024 Mariela Antonova. All rights reserved.</p>
+        </footer>
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <img src="images/solariss.crochet (1).png" alt="Photo 1" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/solariss.crochet (12).png" alt="Photo 2" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/solariss.crochet (4).png" alt="Photo 3" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/solariss.crochet.jpg" alt="Photo 4" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/solariss.crochet(16).jpg" alt="Photo 5" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/solariss.crochet(19).JPG" alt="Photo 6" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
